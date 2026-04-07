@@ -12,6 +12,7 @@
 
 ## 3. Mã giả giải thuật (Pseudocode)
 ### Thao tác: Chèn file theo thời gian
+```
 Hàm Insert_By_Time(List, NewFile):
     newNode = Create_Node(NewFile)
     Nếu List.head == NULL hoặc NewFile.time < List.head.data.time:
@@ -23,3 +24,4 @@ Hàm Insert_By_Time(List, NewFile):
             curr = curr.next
         newNode.next = curr.next
         curr.next = newNode
+```
